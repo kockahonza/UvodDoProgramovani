@@ -1,0 +1,14 @@
+--- PrumerOld.java	2017-11-02 15:21:07.103374481 +0100
++++ Prumer.java	2017-11-02 15:25:43.733378667 +0100
+@@ -7,6 +7,10 @@
+             suma += sc.nextDouble();
+             pocet++;
+         }
+-        System.out.printf("Prumer je %2.2f.\n", suma / pocet);
++        if(pocet == 0) {
++		System.out.printf("Nezadal jste žádné číslo\n");
++	} else {
++		System.out.printf("Prumer je %2.2f.\n", suma / pocet);
++	}
+     }
+ }
