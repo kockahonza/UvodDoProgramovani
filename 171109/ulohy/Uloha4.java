@@ -10,7 +10,8 @@ public class Uloha4 {
 		double old_x = S / 2;
 		double current_x = get_new_x(S, old_x);
 		while (Math.abs(old_x - current_x) > precision) {
-			System.out.printf("%f - %f = %f\n", old_x, current_x, old_x - current_x);
+			// uncomment if tou want to see all steps
+			// System.out.printf("%f - %f = %f\n", old_x, current_x, old_x - current_x);
 			old_x = current_x;
 			current_x = get_new_x(S, old_x);
 		}
